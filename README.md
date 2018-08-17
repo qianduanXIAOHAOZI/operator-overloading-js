@@ -23,27 +23,27 @@
   - [Revision History](#revision-history)
 
 
-#Operator-Overloading-JS#
+# Operator-Overloading-JS
 
 This library enables simple **operator overloading** in Javascript code.
 This library has minimal runtime overheads, all overheads are done on loading time which is fair as that is done only when the system loads. Runtime performance is what is aimed for.
 We do **AST Transformations** during definition/load time to achieve the desired objective.
 
 
-##Installation##
+## Installation
 This library is available for **Node** and **Browser** both. See the installation steps below:
 
-###Node Module (NPM)##
+### Node Module (NPM)
 ```bash
 npm install operator-overloading --save
 ```
 
-###Browser (Bower)###
+### Browser (Bower)
 ```bash
 bower install operator-overloading --save
 ```
 
-##Sneak Peak Example##
+## Sneak Peak Example
 Here is a quick sneak peak of the usage:
 ```javascript
 var overload = require('operator-overloading');
@@ -81,7 +81,7 @@ overload(function () {
 
 ```
 
-##Overloadable Operators##
+## Overloadable Operators
 Following are the operators which can be overloaded with the desired overload function name:
 
 
@@ -129,7 +129,7 @@ Following are the operators which can be overloaded with the desired overload fu
 | 40 | ^= | __xorAssign | Assignment |
 
 
-##Design Consideration / Very IMP / Must Read##
+## Design Consideration / Very IMP / Must Read
 
 It is **very important** that we **DON'T modify the natural language**. Hence the overloading feature will only be available in the specific code blocks where you intend to use it. Also marking them will make core readable for future developers giving them hint that this block has **operator overloading enabled**.
 
